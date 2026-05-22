@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>2026-05-22 Morning Dispatch — Now on REALm</title>
+<meta name="description" content="2026-05-22 の Now on REALm モーニングディスパッチ — 7本の不動産業界ニュース。" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/vigil.css?v4" />
+</head>
+<body>
+<style>
+.date-huge{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:clamp(48px,10vw,112px);line-height:.9;letter-spacing:-.03em;margin:8px 0 20px;}
+.date-huge .dot{color:var(--red)}
+.strap{display:flex;gap:28px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);}
+.strap .count{color:var(--ink);font-weight:700}
+.container{max-width:1400px;margin:0 auto;padding:0 40px}
+.daily-topic{padding:52px 0;border-bottom:1px solid var(--rule);position:relative;opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s;}
+.daily-topic.is-visible{opacity:1;transform:none}
+.daily-topic::before{content:"";position:absolute;left:0;top:0;width:3px;height:0;background:var(--red);transition:height .4s}
+.daily-topic:hover::before{height:100%}
+.daily-topic .container{display:grid;grid-template-columns:72px 1fr 240px;gap:36px}
+.numeral{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:64px;line-height:1;color:var(--rule-2);position:relative;top:-6px;transition:color .2s}
+.daily-topic:hover .numeral{color:var(--red)}
+.numeral .ord{display:block;font-size:9px;letter-spacing:.16em;color:var(--mute);margin-top:8px;line-height:1.4;white-space:nowrap}
+.cat-line{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+.cat-line .sep{color:var(--mute);margin:0 8px}
+.main h2{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:26px;line-height:1.3;margin:0 0 18px;letter-spacing:-.01em}
+.lede{font-family:'Noto Serif JP',serif;font-size:16px;line-height:1.75;margin:0 0 24px;color:var(--ink-2)}
+.main h3{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin:24px 0 10px;color:var(--mute)}
+.keypoints{list-style:none;padding:0;margin:0 0 24px}
+.keypoints li{padding:10px 14px 10px 44px;margin-bottom:2px;background:var(--paper-2);border-left:2px solid transparent;position:relative;font-size:14px;line-height:1.6;transition:border-color .15s,transform .2s}
+.keypoints li:hover{border-left-color:var(--red);transform:translateX(4px)}
+.keypoints li::before{content:attr(data-i);position:absolute;left:14px;top:10px;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--red);letter-spacing:.1em}
+.pull{padding:18px 22px;border-left:3px solid var(--red);background:var(--paper-2);font-size:14px;line-height:1.7;color:var(--ink-2);font-style:italic;margin-top:24px;transition:border-left-width .2s,padding-left .2s}
+.pull:hover{border-left-width:6px;padding-left:19px}
+.bizapp-block{margin-top:28px;border:1px solid var(--red);padding:20px 22px;}
+.bizapp-block .biz-label{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#fff;background:var(--red);display:inline-block;padding:3px 10px;margin-bottom:12px;font-weight:700;}
+.bizapp-block .biz-summary{font-size:14px;font-weight:700;color:var(--ink);line-height:1.65;margin-bottom:10px;font-family:'Noto Serif JP',serif;}
+.bizapp-block ul{list-style:none;padding:0;margin:0;}
+.bizapp-block li{padding:8px 10px 8px 32px;margin-bottom:2px;background:var(--paper-2);border-left:2px solid var(--red);position:relative;font-size:13px;line-height:1.6;color:var(--ink-2);}
+.bizapp-block li .bi{position:absolute;left:8px;top:8px;font-size:12px;}
+.slide-img{margin:20px 0;border:1px solid var(--rule-2);overflow:hidden;cursor:zoom-in;position:relative;transition:border-color .2s}
+.slide-img:hover{border-color:var(--red)}
+.slide-img img{width:100%;display:block;transition:transform .5s}
+.slide-img:hover img{transform:scale(1.02)}
+.side{font-size:13px}
+.side dl{margin:0}
+.side dt{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);margin:18px 0 4px}
+.side dt:first-child{margin-top:0}
+.side dd{margin:0;word-break:break-all}
+.side dd a:hover{color:var(--red)}
+.likes{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:28px;color:var(--red)}
+.likes-label{font-size:11px;color:var(--mute);letter-spacing:.1em;text-transform:uppercase}
+.lightbox-overlay{display:flex;align-items:center;justify-content:center;position:fixed;inset:0;padding:24px;background:rgba(14,13,11,0);z-index:1000;pointer-events:none;transition:background .3s}
+.lightbox-overlay.is-open{background:rgba(14,13,11,.93);pointer-events:auto}
+.lightbox-overlay img{max-width:100%;max-height:90vh;object-fit:contain;opacity:0;transform:scale(.93);transition:opacity .35s,transform .35s}
+.lightbox-overlay.is-open img{opacity:1;transform:scale(1)}
+.lightbox-close{position:absolute;top:20px;right:24px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#F7F5F2;cursor:pointer;background:none;border:1px solid rgba(247,245,242,.3);padding:6px 14px;transition:background .2s}
+.lightbox-close:hover{background:var(--red)}
+@media(max-width:900px){.daily-topic .container{grid-template-columns:1fr}.numeral{font-size:36px}.side{border-top:1px solid var(--rule);padding-top:20px}}
+</style>
+<div class="dispatch">
+  <span class="tick">NOW ON AIr</span>
+  <span class="sep">/</span>
+  <span>№0001</span>
+  <span class="sep">/</span>
+  <span>2026-05-22</span>
+  <span class="sep">/</span>
+  <span>MORNING EDITION</span>
+  <span class="sep">/</span>
+  <span>7 ITEMS</span>
+  <span class="sep">/</span>
+  <span class="live"><span class="dot"></span>LIVE</span>
+  <div class="right">
+    <span class="jst"><b>06:30</b> JST</span>
+    <span>FRI</span>
+  </div>
+</div>
+<nav class="main">
+  <div class="brand"><em class="dot-r">●</em>Now on <em class="brand-ai">REAL</em><span class="brand-r">m</span></div>
+  <ul>
+    <li><a href="../../">HOME</a></li>
+    <li><a href="./" class="active">TODAY</a></li>
+    <li><a href="../../#archive">ARCHIVE</a></li>
+    <li><a href="../../#about">ABOUT</a></li>
+  </ul>
+  <button class="subscribe" onclick="return false">SUBSCRIBE · 06:30 DAILY →</button>
+</nav>
+<div class="hero-wrap">
+  <div class="edition-line">
+    MORNING DISPATCH
+    <span class="sep">//</span>
+    FRIDAY, MAY 22, 2026
+    <span class="sep">//</span>
+    ISSUE N°0001
+  </div>
+  <h1 class="date-huge">2026<span class="dot">.</span>05<span class="dot">.</span>22</h1>
+  <div class="strap">
+    <span><span class="count">07</span>&nbsp;ITEMS</span>
+    <span>AI MORNING INTELLIGENCE</span>
+  </div>
+</div>
+
+<article class="daily-topic" id="topic-1">
+  <div class="container">
+    <aside class="numeral">01<span class="ord">TOPIC 01 · SUUMOジャーナル</span></aside>
+    <div class="main">
+      <div class="cat-line">
+        市況 <span class="sep">/</span> SUUMOジャーナル <span class="sep">/</span> NEWS
+      </div>
+      <h2>一戸建ての防犯意識調査、約3割が無施錠</h2>
+      <div class="slide-img zoom-image" data-src="../../assets/images/2026-05-22/topic_1.png" data-alt="一戸建ての防犯意識調査、約3割が無施錠" role="button" tabindex="0">
+        <img src="../../assets/images/2026-05-22/topic_1.png" alt="一戸建ての防犯意識調査、約3割が無施錠" loading="lazy" />
+      </div>
+      <p class="lede">47都道府県の一戸建て住宅居住者を対象にした防犯意識調査で、外出時の無施錠率が33%に達することが明らかになった。</p>
+      <h3>キーポイント</h3>
+      <ul class="keypoints">
+        <li data-i="01">無施錠率が約3割で防犯リスク</li>
+        <li data-i="02">47都道府県調査結果発表</li>
+        <li data-i="03">防犯対策の見直しが必要</li>
+        <li data-i="04">防犯意識向上が期待される</li>
+      </ul>
+      <div class="pull">約3割が無施錠という衝撃の結果。防犯対策の必要性が浮き彫りに。</div>
+      <div class="bizapp-block">
+        <div class="biz-label">💡 ビジネス活用ポイント</div>
+        <div class="biz-summary">防犯対策を見直し、物件の安全性をアピールできる。</div>
+        <ul>
+        <li><span class="bi">🏢</span>防犯設備の提案を強化する</li>        <li><span class="bi">🤝</span>購入希望者に防犯意識を確認する</li>        <li><span class="bi">👁</span>地域の安全性向上に貢献する</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="side">
+      <dl>
+
+        <dt>SOURCE</dt>
+        <dd>SUUMOジャーナル</dd>
+        <dt>PUBLISHED</dt>
+        <dd>2026-05-22</dd>
+        <dt>CATEGORY</dt>
+        <dd>市況</dd>
+        <dt>LINKS</dt>
+        <dd><a href="https://suumo.jp/journal/2026/05/20/216869/">https://suumo.jp/journal/2026/05/20/216869/</a></dd>
+      </dl>
+    </aside>
+  </div>
+</article>
+<article class="daily-topic" id="topic-2">
+  <div class="container">
+    <aside class="numeral">02<span class="ord">TOPIC 02 · SUUMOジャーナル</span></aside>
+    <div class="main">
+      <div class="cat-line">
+        その他 <span class="sep">/</span> SUUMOジャーナル <span class="sep">/</span> NEWS
+      </div>
+      <h2>空き家リノベで地域交流場が誕生</h2>
+      <div class="slide-img zoom-image" data-src="../../assets/images/2026-05-22/topic_2.png" data-alt="空き家リノベで地域交流場が誕生" role="button" tabindex="0">
+        <img src="../../assets/images/2026-05-22/topic_2.png" alt="空き家リノベで地域交流場が誕生" loading="lazy" />
+      </div>
+      <p class="lede">東京都の空き家リノベーションコンテストで最優秀賞を受賞した事例が、地域交流の場として成功を収めた。</p>
+      <h3>キーポイント</h3>
+      <ul class="keypoints">
+        <li data-i="01">空き家活用の成功事例</li>
+        <li data-i="02">地域交流の場としての役割</li>
+        <li data-i="03">補助金を活用した取り組み</li>
+        <li data-i="04">リノベーションへの注目が高まる</li>
+      </ul>
+      <div class="pull">空き家を利用した地域交流の場が、地域活性化の鍵を握る。</div>
+      <div class="bizapp-block">
+        <div class="biz-label">💡 ビジネス活用ポイント</div>
+        <div class="biz-summary">空き家リノベの実績を参考に、新たなプロジェクトを目指せる。</div>
+        <ul>
+        <li><span class="bi">🏢</span>空き家リノベの提案を行う</li>        <li><span class="bi">🤝</span>地域交流イベントを企画する</li>        <li><span class="bi">👁</span>補助金制度の活用を検討する</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="side">
+      <dl>
+
+        <dt>SOURCE</dt>
+        <dd>SUUMOジャーナル</dd>
+        <dt>PUBLISHED</dt>
+        <dd>2026-05-22</dd>
+        <dt>CATEGORY</dt>
+        <dd>その他</dd>
+        <dt>LINKS</dt>
+        <dd><a href="https://suumo.jp/journal/2026/05/19/216796/">https://suumo.jp/journal/2026/05/19/216796/</a></dd>
+      </dl>
+    </aside>
+  </div>
+</article>
+<article class="daily-topic" id="topic-3">
+  <div class="container">
+    <aside class="numeral">03<span class="ord">TOPIC 03 · SUUMOジャーナル</span></aside>
+    <div class="main">
+      <div class="cat-line">
+        海外動向 <span class="sep">/</span> SUUMOジャーナル <span class="sep">/</span> NEWS
+      </div>
+      <h2>NYの生活術、サブレットと中華で節約</h2>
+      <div class="slide-img zoom-image" data-src="../../assets/images/2026-05-22/topic_3.png" data-alt="NYの生活術、サブレットと中華で節約" role="button" tabindex="0">
+        <img src="../../assets/images/2026-05-22/topic_3.png" alt="NYの生活術、サブレットと中華で節約" loading="lazy" />
+      </div>
+      <p class="lede">高物価のニューヨークで、サブレットと中華料理を活用したコスト削減の生活スタイルが紹介された。</p>
+      <h3>キーポイント</h3>
+      <ul class="keypoints">
+        <li data-i="01">高物価のNYでの生活術</li>
+        <li data-i="02">サブレット利用のメリット</li>
+        <li data-i="03">リーズナブルな中華料理が好評</li>
+        <li data-i="04">新生活のスタート方法を提案</li>
+      </ul>
+      <div class="pull">NYでの生活コストを抑えるため、サブレットと安い飲食を活用せよ。</div>
+      <div class="bizapp-block">
+        <div class="biz-label">💡 ビジネス活用ポイント</div>
+        <div class="biz-summary">コストを抑えた物件探しや食文化の活用が鍵。</div>
+        <ul>
+        <li><span class="bi">🏢</span>NYでの物件紹介を増やす</li>        <li><span class="bi">🤝</span>食文化に基づく販促活動</li>        <li><span class="bi">👁</span>地元情報提供を強化する</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="side">
+      <dl>
+
+        <dt>SOURCE</dt>
+        <dd>SUUMOジャーナル</dd>
+        <dt>PUBLISHED</dt>
+        <dd>2026-05-22</dd>
+        <dt>CATEGORY</dt>
+        <dd>海外動向</dd>
+        <dt>LINKS</dt>
+        <dd><a href="https://suumo.jp/journal/2026/05/15/215360/">https://suumo.jp/journal/2026/05/15/215360/</a></dd>
+      </dl>
+    </aside>
+  </div>
+</article>
+<article class="daily-topic" id="topic-4">
+  <div class="container">
+    <aside class="numeral">04<span class="ord">TOPIC 04 · SUUMOジャーナル</span></aside>
+    <div class="main">
+      <div class="cat-line">
+        その他 <span class="sep">/</span> SUUMOジャーナル <span class="sep">/</span> NEWS
+      </div>
+      <h2>団地管理の試練、住人の他界と香典問題</h2>
+      <div class="slide-img zoom-image" data-src="../../assets/images/2026-05-22/topic_4.png" data-alt="団地管理の試練、住人の他界と香典問題" role="button" tabindex="0">
+        <img src="../../assets/images/2026-05-22/topic_4.png" alt="団地管理の試練、住人の他界と香典問題" loading="lazy" />
+      </div>
+      <p class="lede">団地の理事長が住人の他界に伴う管理費や香典に関する対応を振り返り、その課題を解説した。</p>
+      <h3>キーポイント</h3>
+      <ul class="keypoints">
+        <li data-i="01">住人の他界による影響</li>
+        <li data-i="02">香典の対応策</li>
+        <li data-i="03">管理組合の役割と課題</li>
+        <li data-i="04">高齢化社会の現実を映す</li>
+      </ul>
+      <div class="pull">団地管理での高齢化による具体的な問題が浮き彫りに。</div>
+      <div class="bizapp-block">
+        <div class="biz-label">💡 ビジネス活用ポイント</div>
+        <div class="biz-summary">団地管理の実情を踏まえた支援策の構築が必要。</div>
+        <ul>
+        <li><span class="bi">🏢</span>住人の支援制度を検討する</li>        <li><span class="bi">🤝</span>高齢者向けサービスを拡充する</li>        <li><span class="bi">👁</span>地域との連携を強化する</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="side">
+      <dl>
+
+        <dt>SOURCE</dt>
+        <dd>SUUMOジャーナル</dd>
+        <dt>PUBLISHED</dt>
+        <dd>2026-05-22</dd>
+        <dt>CATEGORY</dt>
+        <dd>その他</dd>
+        <dt>LINKS</dt>
+        <dd><a href="https://suumo.jp/journal/2026/05/14/216531/">https://suumo.jp/journal/2026/05/14/216531/</a></dd>
+      </dl>
+    </aside>
+  </div>
+</article>
+<article class="daily-topic" id="topic-5">
+  <div class="container">
+    <aside class="numeral">05<span class="ord">TOPIC 05 · 新建ハウジング</span></aside>
+    <div class="main">
+      <div class="cat-line">
+        データ <span class="sep">/</span> 新建ハウジング <span class="sep">/</span> NEWS
+      </div>
+      <h2>ITツール導入後の放置、工務店の実態</h2>
+      <div class="slide-img zoom-image" data-src="../../assets/images/2026-05-22/topic_5.png" data-alt="ITツール導入後の放置、工務店の実態" role="button" tabindex="0">
+        <img src="../../assets/images/2026-05-22/topic_5.png" alt="ITツール導入後の放置、工務店の実態" loading="lazy" />
+      </div>
+      <p class="lede">工務店向けITツール導入実態調査が示す約4割がツールを放置する現状と、その背景を明かす。</p>
+      <h3>キーポイント</h3>
+      <ul class="keypoints">
+        <li data-i="01">4割がITツールを放置</li>
+        <li data-i="02">操作性の課題が影響</li>
+        <li data-i="03">サポート体制の重要性</li>
+        <li data-i="04">DX疲労の実態が浮き彫り</li>
+      </ul>
+      <div class="pull">工務店のITツール導入は進むも、実際の活用は課題が多い。</div>
+      <div class="bizapp-block">
+        <div class="biz-label">💡 ビジネス活用ポイント</div>
+        <div class="biz-summary">ITツールの活用率向上とサポート体制強化が課題。</div>
+        <ul>
+        <li><span class="bi">🏢</span>使いやすいツールの導入を提案</li>        <li><span class="bi">🤝</span>サポート体制を共有する</li>        <li><span class="bi">👁</span>導入事例を地域に広める</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="side">
+      <dl>
+
+        <dt>SOURCE</dt>
+        <dd>新建ハウジング</dd>
+        <dt>PUBLISHED</dt>
+        <dd>2026-05-22</dd>
+        <dt>CATEGORY</dt>
+        <dd>データ</dd>
+        <dt>LINKS</dt>
+        <dd><a href="https://www.s-housing.jp/archives/420663?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%25b7%25a5%25e5%258b%2599%25e5%25ba%2597%25e3%2581%25ae%25e7%25b4%2584%25e4%25ba%25a4">https://www.s-housing.jp/archives/420663?utm_source=rss…</a></dd>
+      </dl>
+    </aside>
+  </div>
+</article>
+<article class="daily-topic" id="topic-6">
+  <div class="container">
+    <aside class="numeral">06<span class="ord">TOPIC 06 · 新建ハウジング</span></aside>
+    <div class="main">
+      <div class="cat-line">
+        政策・税制 <span class="sep">/</span> 新建ハウジング <span class="sep">/</span> NEWS
+      </div>
+      <h2>ケイミューが値上げ、パナソニック雨といも影響</h2>
+      <div class="slide-img zoom-image" data-src="../../assets/images/2026-05-22/topic_6.png" data-alt="ケイミューが値上げ、パナソニック雨といも影響" role="button" tabindex="0">
+        <img src="../../assets/images/2026-05-22/topic_6.png" alt="ケイミューが値上げ、パナソニック雨といも影響" loading="lazy" />
+      </div>
+      <p class="lede">ケイミューがパナソニック製品の値上げを発表、全般で20%以上の上昇が見込まれる。</p>
+      <h3>キーポイント</h3>
+      <ul class="keypoints">
+        <li data-i="01">値上げ幅が20%以上</li>
+        <li data-i="02">原材料高騰の影響</li>
+        <li data-i="03">今後の価格見直しの可能性</li>
+        <li data-i="04">市場への影響が懸念される</li>
+      </ul>
+      <div class="pull">材料費高騰が工務店にも影響、価格戦略の再検討が必要。</div>
+      <div class="bizapp-block">
+        <div class="biz-label">💡 ビジネス活用ポイント</div>
+        <div class="biz-summary">値上げへの対策を考えたうえでの価格設定が重要。</div>
+        <ul>
+        <li><span class="bi">🏢</span>コスト管理を徹底する</li>        <li><span class="bi">🤝</span>材料選定での差別化を図る</li>        <li><span class="bi">👁</span>顧客への説明責任を果たす</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="side">
+      <dl>
+
+        <dt>SOURCE</dt>
+        <dd>新建ハウジング</dd>
+        <dt>PUBLISHED</dt>
+        <dd>2026-05-22</dd>
+        <dt>CATEGORY</dt>
+        <dd>政策・税制</dd>
+        <dt>LINKS</dt>
+        <dd><a href="https://www.s-housing.jp/archives/420645?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2582%25b1%25e3%2582%25a4%25e3%2582%25b8%25e3%2581%25ae%25e5%25a2%2596%25e3%2581%25ae%25e5%25a0%25b1%25e3%2581%259d">https://www.s-housing.jp/archives/420645?utm_source=rss…</a></dd>
+      </dl>
+    </aside>
+  </div>
+</article>
+<article class="daily-topic" id="topic-7">
+  <div class="container">
+    <aside class="numeral">07<span class="ord">TOPIC 07 · 新建ハウジング</span></aside>
+    <div class="main">
+      <div class="cat-line">
+        企業 <span class="sep">/</span> 新建ハウジング <span class="sep">/</span> NEWS
+      </div>
+      <h2>積水ハウス建設、クラフター112人を採用</h2>
+      <div class="slide-img zoom-image" data-src="../../assets/images/2026-05-22/topic_7.png" data-alt="積水ハウス建設、クラフター112人を採用" role="button" tabindex="0">
+        <img src="../../assets/images/2026-05-22/topic_7.png" alt="積水ハウス建設、クラフター112人を採用" loading="lazy" />
+      </div>
+      <p class="lede">積水ハウス建設が112人のクラフターを新たに採用し、従業員数が683人に達した。</p>
+      <h3>キーポイント</h3>
+      <ul class="keypoints">
+        <li data-i="01">112人のクラフターを採用</li>
+        <li data-i="02">在籍総数が683人に</li>
+        <li data-i="03">人材確保と育成が進行</li>
+        <li data-i="04">将来への施工力強化を図る</li>
+      </ul>
+      <div class="pull">施工力の強化と人材育成が今後の住宅市場への貢献を期待。</div>
+      <div class="bizapp-block">
+        <div class="biz-label">💡 ビジネス活用ポイント</div>
+        <div class="biz-summary">人材確保の努力が業界全体に良い影響を与える可能性。</div>
+        <ul>
+        <li><span class="bi">🏢</span>積極的な人材採用を行う</li>        <li><span class="bi">🤝</span>内外部の育成プログラムを強化する</li>        <li><span class="bi">👁</span>業界ネットワークを拡充する</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="side">
+      <dl>
+
+        <dt>SOURCE</dt>
+        <dd>新建ハウジング</dd>
+        <dt>PUBLISHED</dt>
+        <dd>2026-05-22</dd>
+        <dt>CATEGORY</dt>
+        <dd>企業</dd>
+        <dt>LINKS</dt>
+        <dd><a href="https://www.s-housing.jp/archives/420638?utm_source=rss&utm_medium=rss&utm_campaign=%25e7%25a9%258d%25e6%25b0%25b4%25e3%2583%258f%25e3%2582%25a6%25e3%2582%25b9%25e5%25bb%25ba%25e8%25a8%25ad%25e3%2580%2581%25e3%2582%25af%25e3%2583%25a9%25e3%2583%2595%25e3%2582%25bf%25e3%2583%25bc112%25e4%25ba%25ba%25e6%258e%25a1%25e7%2594%25a8%25e3%2580%2580%25e5%259c%25a8%25e7%25b1%258d%25e7%25b7%258f%25e6%2595%25b0683">https://www.s-housing.jp/archives/420638?utm_source=rss…</a></dd>
+      </dl>
+    </aside>
+  </div>
+</article>
+<div class="colophon">
+  <div class="left"><b>Now on <span class="brand-ai">REAL</span>m</b> · Real Estate Morning Intelligence · 山中秀斗 / TREPRO</div>
+  <div class="right">2026-05-22 DISPATCH</div>
+</div>
+
+<!-- Article Modal -->
+<div id="article-modal">
+  <div id="modal-box">
+    <div class="modal-head">
+      <span id="modal-cat"></span>
+      <button id="modal-close">✕ CLOSE</button>
+    </div>
+    <div id="modal-slide-wrap" style="display:none;margin:0;overflow:hidden;border-bottom:1px solid var(--rule-2);">
+      <img id="modal-slide-img" src="" alt="" style="width:100%;display:block;" />
+    </div>
+    <div class="modal-body">
+      <h2 id="modal-title"></h2>
+      <p id="modal-lede"></p>
+      <div id="modal-kp"></div>
+      <div id="modal-pull"></div>
+      <div id="modal-bizapp">
+        <div class="bizapp-head">💡 ビジネス活用ポイント</div>
+        <div class="bizapp-summary" id="modal-bizapp-summary"></div>
+        <ul class="bizapp-actions" id="modal-bizapp-actions"></ul>
+      </div>
+      <div id="modal-quickstart">
+        <div class="qs-head">⚡ 明日からできる｜個人事業主・社長向け</div>
+        <div class="qs-headline" id="qs-headline"></div>
+        <div class="qs-meta">
+          <div class="qs-tool"><span class="qs-label">推奨ツール</span> <a id="qs-tool-link" href="#" target="_blank" rel="noopener"></a> <span id="qs-cost" class="qs-cost"></span></div>
+          <div class="qs-time"><span class="qs-label">所要時間</span> <span id="qs-time"></span></div>
+        </div>
+        <div class="qs-steps-wrap">
+          <div class="qs-section-label">3ステップで試す</div>
+          <ol class="qs-steps" id="qs-steps"></ol>
+        </div>
+        <div class="qs-prompt-wrap">
+          <div class="qs-section-label">📋 コピペで使えるプロンプト</div>
+          <div class="qs-prompt" id="qs-prompt"></div>
+          <button class="qs-copy-btn" id="qs-copy-btn">📋 プロンプトをコピー</button>
+        </div>
+        <div class="qs-roi" id="qs-roi"></div>
+      </div>
+      <div class="modal-foot">
+        <span id="modal-src"></span>
+        <a id="modal-link" href="#" target="_blank" rel="noopener">元記事を読む →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image Lightbox -->
+<div class="lightbox-overlay" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">× CLOSE</button>
+  <img src="" id="lightbox-img" alt="" />
+</div>
+
+<script>
+(function(){
+  /* ── modal ── */
+  var modal=document.getElementById('article-modal');
+  var box=document.getElementById('modal-box');
+
+  function openModal(card){
+    var d=card.dataset;
+    document.getElementById('modal-cat').textContent=d.category||'';
+    document.getElementById('modal-title').textContent=d.title||'';
+    document.getElementById('modal-lede').textContent=d.lede||'';
+    document.getElementById('modal-src').textContent='SOURCE: '+(d.source||'');
+    var linkEl=document.getElementById('modal-link');
+    linkEl.href=d.link||'#';
+
+    /* Gemini slide image */
+    var slideWrap=document.getElementById('modal-slide-wrap');
+    var slideImg=document.getElementById('modal-slide-img');
+    if(d.slide){
+      slideImg.src=d.slide; slideImg.alt=d.title||'';
+      slideWrap.style.display='block';
+    } else { slideWrap.style.display='none'; slideImg.src=''; }
+
+    /* keypoints */
+    var kpEl=document.getElementById('modal-kp');
+    kpEl.innerHTML='';
+    try{
+      var kps=JSON.parse(d.keypoints||'[]');
+      if(kps.length){
+        var ul=document.createElement('ul');
+        kps.forEach(function(kp,i){
+          var li=document.createElement('li');
+          var num=document.createElement('span');
+          num.className='kp-num';
+          num.textContent=String(i+1).padStart(2,'0');
+          li.appendChild(num);
+          li.appendChild(document.createTextNode(kp));
+          ul.appendChild(li);
+        });
+        kpEl.appendChild(ul);
+      }
+    }catch(e){}
+
+    /* pull */
+    var pullEl=document.getElementById('modal-pull');
+    if(d.pull){pullEl.textContent='「'+d.pull+'」';pullEl.style.display='block';}
+    else{pullEl.style.display='none';}
+
+    /* bizapp */
+    var bizEl=document.getElementById('modal-bizapp');
+    try{
+      var biz=JSON.parse(d.bizapp||'null');
+      if(biz&&biz.summary){
+        document.getElementById('modal-bizapp-summary').textContent=biz.summary;
+        var baList=document.getElementById('modal-bizapp-actions');
+        baList.innerHTML='';
+        var icons=['🏢','🤝','👁'];
+        (biz.actions||[]).forEach(function(act,i){
+          var li=document.createElement('li');
+          var ic=document.createElement('span');
+          ic.className='ba-icon';ic.textContent=icons[i]||'→';
+          li.appendChild(ic);li.appendChild(document.createTextNode(act));
+          baList.appendChild(li);
+        });
+        bizEl.style.display='block';
+      } else { bizEl.style.display='none'; }
+    }catch(e){ bizEl.style.display='none'; }
+
+    /* quickstart */
+    var qsEl=document.getElementById('modal-quickstart');
+    try{
+      var qs=JSON.parse(d.quickstart||'null');
+      if(qs&&qs.headline){
+        document.getElementById('qs-headline').textContent=qs.headline;
+        var toolLink=document.getElementById('qs-tool-link');
+        toolLink.textContent=(qs.tool&&qs.tool.name)||'';
+        toolLink.href=(qs.tool&&qs.tool.url)||'#';
+        document.getElementById('qs-cost').textContent=(qs.tool&&qs.tool.cost)?'· '+qs.tool.cost:'';
+        document.getElementById('qs-time').textContent=qs.time||'';
+        var stepsEl=document.getElementById('qs-steps');
+        stepsEl.innerHTML='';
+        (qs.steps||[]).forEach(function(step){
+          var li=document.createElement('li');
+          li.textContent=step;
+          stepsEl.appendChild(li);
+        });
+        var promptEl=document.getElementById('qs-prompt');
+        promptEl.textContent=qs.prompt||'';
+        var copyBtn=document.getElementById('qs-copy-btn');
+        copyBtn.onclick=function(){
+          navigator.clipboard.writeText(qs.prompt||'').then(function(){
+            copyBtn.textContent='✓ コピー完了';
+            setTimeout(function(){copyBtn.textContent='📋 プロンプトをコピー';},1800);
+          });
+        };
+        document.getElementById('qs-roi').textContent=qs.roi?'💰 想定効果：'+qs.roi:'';
+        qsEl.style.display='block';
+      } else { qsEl.style.display='none'; }
+    }catch(e){ qsEl.style.display='none'; }
+
+    modal.style.display='flex';
+    modal.style.pointerEvents='auto';
+    requestAnimationFrame(function(){
+      modal.style.background='rgba(0,0,0,.72)';
+      box.classList.add('is-open');
+    });
+    document.body.style.overflow='hidden';
+  }
+
+  function closeModal(){
+    modal.style.background='rgba(0,0,0,0)';
+    box.classList.remove('is-open');
+    setTimeout(function(){modal.style.display='none';modal.style.pointerEvents='none';},280);
+    document.body.style.overflow='';
+  }
+
+  document.getElementById('modal-close').addEventListener('click',closeModal);
+  modal.addEventListener('click',function(e){if(e.target===modal)closeModal();});
+
+  /* card click → modal */
+  document.querySelectorAll('.img-card[data-title],.tcard[data-title]').forEach(function(card){
+    card.addEventListener('click',function(e){
+      if(e.target.tagName==='A')return;
+      openModal(card);
+    });
+  });
+
+  /* ── category filter ── */
+  document.querySelectorAll('.filter-pill').forEach(function(pill){
+    pill.addEventListener('click',function(){
+      var cat=pill.dataset.cat;
+      document.querySelectorAll('.filter-pill').forEach(function(p){p.classList.remove('active');});
+      pill.classList.add('active');
+      document.querySelectorAll('.tcard').forEach(function(c){
+        if(!cat||c.dataset.category===cat||cat==='ALL'){
+          c.style.opacity='1'; c.style.pointerEvents=''; c.style.transform='';
+        } else {
+          c.style.opacity='.2'; c.style.pointerEvents='none'; c.style.transform='scale(.97)';
+        }
+      });
+    });
+  });
+
+  /* ── image lightbox ── */
+  var overlay=document.getElementById('lightbox');
+  var img=document.getElementById('lightbox-img');
+  var close=document.getElementById('lightbox-close');
+  document.querySelectorAll('.zoom-image').forEach(function(el){
+    el.addEventListener('click',function(e){e.stopPropagation();
+      img.src=''; overlay.classList.add('is-open');
+      setTimeout(function(){ img.src=el.dataset.src; img.alt=el.dataset.alt||''; },20);
+    });
+  });
+  function closeBox(){
+    img.style.opacity='0'; img.style.transform='scale(0.93)';
+    setTimeout(function(){ overlay.classList.remove('is-open'); img.src=''; img.style.opacity=''; img.style.transform=''; },300);
+  }
+  close.addEventListener('click',closeBox);
+  overlay.addEventListener('click',function(e){if(e.target===overlay)closeBox();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeBox();closeModal();}});
+
+  /* ── scroll fade-in: .daily-topic (デイリーページ専用) ── */
+  var fadeEls=document.querySelectorAll('.daily-topic');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target);}});
+    },{threshold:0.05,rootMargin:'0px 0px -24px 0px'});
+    fadeEls.forEach(function(el){io.observe(el);});
+  } else { fadeEls.forEach(function(el){el.classList.add('is-visible');}); }
+
+  /* ── dispatch ticker ── */
+  var row=document.querySelector('.dispatch');
+  if(row && row.dataset.ticker!=='off'){
+    var inner=row.innerHTML; row.innerHTML=inner+inner;
+    var pos=0,spd=0.4;
+    (function tick(){pos+=spd;if(pos>=row.scrollWidth/2)pos=0;row.scrollLeft=pos;requestAnimationFrame(tick);})();
+  }
+})();
+</script>
+
+</body>
+</html>
